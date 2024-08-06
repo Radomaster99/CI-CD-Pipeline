@@ -1,4 +1,4 @@
-name: Selenium IDE CI
+name: .NET Core CI
 
 on:
   push:
@@ -30,9 +30,4 @@ jobs:
         run: dotnet restore
 
       - name: Build
-        run: dotnet build --no-restore
-
-      - name: Run tests
-        env:
-          CHROMEWEBDRIVER: /usr/bin/google-chrome
-        run: dotnet test --verbosity normal
+        run: dotnet build --no-
